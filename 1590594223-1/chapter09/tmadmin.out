@@ -1,0 +1,30 @@
+
+>      LMID         User Name       Client Name    Time    Status  Bgn/Cmmt/Abrt
+--------------- --------------- --------------- -------- ------- -------------
+GO-FASTER-3     NT              WSH              3:03:14 IDLE    0/0/0
+GO-FASTER-3     NT              JSH              3:03:14 IDLE    0/0/0
+GO-FASTER-3     NT              tmadmin          0:00:00 IDLE    0/0/0
+
+> Prog Name      Queue Name  # Serve Wk Queued  # Queued  Ave. Len    Machine
+---------      ------------------- ---------  --------  --------    -------
+PSAPPSRV.exe   APPQ              1         -         0         - GO-FASTER+
+JREPSVR.exe    00094.00250       1         -         0         - GO-FASTER+
+PSMONITORSRV.e MONITOR           1         -         0         - GO-FASTER+
+BBL.exe        61778             1         -         0         - GO-FASTER+
+WSL.exe        00001.00020       1         -         0         - GO-FASTER+
+JSL.exe        00095.00200       1         -         0         - GO-FASTER+
+PSWATCHSRV.exe WATCH             1         -         0         - GO-FASTER+
+PSSAMSRV.exe   SAMQ              1         -         0         - GO-FASTER+
+
+> Prog Name      Queue Name  Grp Name      ID RqDone Load Done Current Service
+---------      ----------  --------      -- ------ --------- ---------------
+BBL.exe        61778       GO-FAST+       0    187      9350 (  IDLE )
+PSMONITORSRV.e MONITOR     MONITOR        1      0         0 (  IDLE )
+PSAPPSRV.exe   APPQ        APPSRV         1    192      9600 (  IDLE )
+PSWATCHSRV.exe WATCH       WATCH          1      0         0 (  IDLE )
+JREPSVR.exe    00094.00250 JREPGRP      250    141      7050 (  IDLE )
+JSL.exe        00095.00200 JSLGRP       200      0         0 (  IDLE )
+WSL.exe        00001.00020 BASE          20      0         0 (  IDLE )
+PSSAMSRV.exe   SAMQ        APPSRV       100      0         0 (  IDLE )
+
+> 

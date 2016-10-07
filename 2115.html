@@ -1,0 +1,47 @@
+<html><head><meta name="subject"
+content="PeopleSoft for the Oracle DBA"><meta name="keywords"
+content="PeopleSoft for the Oracle DBA, Go-Faster Consultancy Ltd., oracle, peoplesoft, peoplecode, ERP, financals, HRMS, tuxedo, BEA, performance, tuning, database, relational, consultancy, consultant, design, strategy, trouble-shooting, rdbms, sql, PL/SQL, presentations, download"><meta name="description"
+content="PeopleSoft for the Oracle DBA - Go-Faster Consultancy Ltd. provides systems performace tuning consultacy, specialising in PeopleSoft/Oracle systems."><title>PeopleSoft for the Oracle DBA - A PeopleSoft Survival Guide for Oracle DBAs!</title></head><body bgcolor="#FFFFFF"><h1><font face="Century Gothic">Errata</font></h1><hr><h4><a name="ch03"><font face="Century Gothic">Chapters 1 2 </font></a><font
+face="Century Gothic"><u>3</u> </font><a href="#ch04"><font
+face="Century Gothic">4</font></a><font face="Century Gothic"> 5 </font><a
+href="#ch06"><font face="Century Gothic">6</font></a><font
+face="Century Gothic"> 7 8 </font><a href="#ch09"><font
+face="Century Gothic">9</font></a><font face="Century Gothic"> 10 </font><a href="#ch11"><font face="Century Gothic">11</font></a><font
+face="Century Gothic"> </font><a href="#ch12"><font
+face="Century Gothic">12</font></a><font face="Century Gothic"> 13 14</font></h4><h2><font face="Century Gothic">Chapter 3</font></h2><p><font face="Century Gothic">p32: Owner ID/Access ID (SYSADM)<br>Access ID and Owner ID are not the same thing. Though by default the Owner ID is always an Access ID, it is theoretically possible for processes to connect to the same database in the same Owner ID schema via other Access ID users. The necessary privileges must be granted to the Access ID on objects in the Owner ID schema - see pages 47-48.</font></p><p><font face="Century Gothic">p43: after listing 3-12<br>The schema that contains the PeopleSoft database is referred to as the<strike> Access ID</strike> Owner ID.</font></p><hr><h4><a name="ch04"><font face="Century Gothic">Chapters 1 2 </font></a><a
+href="#ch03"><font face="Century Gothic">3</font></a><font
+face="Century Gothic"> <u>4</u> 5 </font><a href="#ch06"><font
+face="Century Gothic">6</font></a><font face="Century Gothic"> 7 8 </font><a href="#ch09"><font face="Century Gothic">9</font></a><font
+face="Century Gothic"> 10 </font><a href="#ch11"><font
+face="Century Gothic">11</font></a><font face="Century Gothic"> </font><a
+href="#ch12"><font face="Century Gothic">12</font></a><font
+face="Century Gothic"> 13 14</font></h4><h2><font face="Century Gothic">Chapter 4</font></h2><p><font face="Century Gothic">p60: Comment for BUILDSEQNO<br><strike>For instance, a table must be built before a view that references it, so the view will have a higher build sequence number.</strike><br>For instance, a view must be built before a view that references it, so the referencing view will have a higher build sequence number than the referenced view.</font></p><p><font face="Century Gothic">p76: Search Record.<br>The search record specified in the component definition (PSPNLGRPDEFN) can be overridden on the menu item (PSMENUITEM).</font></p><hr><h4><a name="ch06"><font face="Century Gothic">Chapters 1 2 </font></a><a
+href="#ch03"><font face="Century Gothic">3</font></a><font
+face="Century Gothic"> </font><a href="#ch04"><font
+face="Century Gothic">4</font></a><font face="Century Gothic"> 5 <u>6</u> 7 8 </font><a href="#ch09"><font face="Century Gothic">9</font></a><font
+face="Century Gothic"> 10 </font><a href="#ch11"><font
+face="Century Gothic">11</font></a><font face="Century Gothic"> </font><a
+href="#ch12"><font face="Century Gothic">12</font></a><font
+face="Century Gothic"> 13 14</font></h4><h2><font face="Century Gothic">Chapter 6</font></h2><p><font face="Century Gothic">p130: Listing 6-8. closing bracket missing after BUFFER POOL and before PCTFREE<br>...BUFFER_POOL **BUFFPOOL**<strong>)</strong> PCTFREE **PCTFREE** ...</font></p><hr><h4><a name="ch09"><font face="Century Gothic">Chapters 1 2 </font></a><a
+href="#ch03"><font face="Century Gothic">3</font></a><font
+face="Century Gothic"> </font><a href="#ch04"><font
+face="Century Gothic">4</font></a><font face="Century Gothic"> 5 </font><a
+href="#ch06"><font face="Century Gothic">6</font></a><font
+face="Century Gothic"> 7 8 <u>9</u> 10 </font><a href="#ch11"><font
+face="Century Gothic">11</font></a><font face="Century Gothic"> </font><a
+href="#ch12"><font face="Century Gothic">12</font></a><font
+face="Century Gothic"> 13 14</font></h4><h2><font face="Century Gothic">Chapter 9</font></h2><p><font face="Century Gothic">p203: Listing 203<br><strike>rem GRANT EXECUTE ON perfstat.sysadm TO sysadm;</strike><br>rem GRANT EXECUTE ON sys.perfstat TO sysadm;</font></p><hr><h4><a name="ch11"><font face="Century Gothic">Chapters 1 2 </font></a><a
+href="#ch03"><font face="Century Gothic">3</font></a><font
+face="Century Gothic"> </font><a href="#ch04"><font
+face="Century Gothic">4</font></a><font face="Century Gothic"> 5 </font><a
+href="#ch06"><font face="Century Gothic">6</font></a><font
+face="Century Gothic"> 7 8 </font><a href="#ch09"><font
+face="Century Gothic">9</font></a><font face="Century Gothic"> 10 <u>11</u> </font><a href="#ch12"><font face="Century Gothic">12</font></a><font
+face="Century Gothic"> 13 14</font></h4><h2><font face="Century Gothic">Chapter 11</font></h2><p><font face="Century Gothic">p267: To disable tracing, use one of the following:<br><strike>EXECUTE sys.dbms_monitor.session_trace_enable(&lt;sid&gt;,&lt;serial#&gt;,waits=&gt;FALSE, binds=&gt;FALSE);</strike><br>EXECUTE sys.dbms_monitor.session_trace_disable;</font></p><hr><h4><a name="ch12"><font face="Century Gothic">Chapters 1 2 </font></a><a
+href="#ch03"><font face="Century Gothic">3</font></a><font
+face="Century Gothic"> </font><a href="#ch04"><font
+face="Century Gothic">4</font></a><font face="Century Gothic"> 5 </font><a
+href="#ch06"><font face="Century Gothic">6</font></a><font
+face="Century Gothic"> 7 8 </font><a href="#ch09"><font
+face="Century Gothic">9</font></a><font face="Century Gothic"> 10 </font><a href="#ch11"><font face="Century Gothic">11</font></a><font
+face="Century Gothic"> <u>12</u> 13 14</font></h4><h2><font face="Century Gothic">Chapter 12</font></h2><p><font face="Century Gothic">p322: In the formula for MAXSERVICES, the 7<sup>th</sup> term should read:<br><strike>+ 2n_ + 5n...</strike><br>+2n<sup>2</sup> + 5n...</font></p></body></html>
